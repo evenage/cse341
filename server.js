@@ -17,5 +17,4 @@ db.initDb((err) => {
       console.log(`Database is connected and server running on port ${port}`);
     });
   }
-
 });
