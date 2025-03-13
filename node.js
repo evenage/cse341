@@ -1,2 +1,2 @@
-const dotnev = require('dotenv');
-dotenv.config();
+// const dotnev = require('dotenv');
+// dotenv.config();

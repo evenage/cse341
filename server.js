@@ -8,14 +8,14 @@ const port = process.env.PORT || 3000;
 // Use the routes
 app.use("/", routes);
 
+// Initialize the database and start the server
 db.initDb((err) => {
   if (err) {
     console.error(err);
   } else {
-    setTimeout(() => {
-      app.listen(port, () => {
-        console.log(`Database is connected and server running on port ${port}`);
-      });
-    }, 1000); // 1-second timeout
+    app.listen(port, () => {
+      console.log(`Database is connected and server running on port ${port}`);
+    });
   }
+
 });
